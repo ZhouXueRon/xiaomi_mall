@@ -1,0 +1,79 @@
+.topnav {
+    background: #333;
+    height: 40px;
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.topnav-menu {
+    line-height: 40px;
+}
+.topnav-menu li {
+    padding: 0 7px;
+}
+.topnav-menu li:first-child {
+    padding-left: 0;
+}
+.topnav-menu li:last-child {
+    padding-right: 0;
+}
+.topnav-menu a {
+    display: inline-block;
+    height: 40px;
+    position: relative;
+}
+.topnav-menu a::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 16px;
+    background: #424242;
+    top: 50%;
+    right: -7px;
+    margin-top: -8px;
+}
+.topnav-menu li:last-child a::after {
+    display: none;
+}
+.topnav-menu a:hover {
+    color: #fff;
+}
+
+.topnav-car {
+    background: #424242;
+    width: 120px;
+    height: 40px;
+    margin-left: 15px;
+    position: relative;
+}
+.topnav-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+}
+.topnav-link .iconfont {
+    margin-right: 4px;
+}
+.topnav-detail {
+    width: 320px;
+    height: 100px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    text-align: center;
+    line-height: 100px;
+    display: none;
+    z-index: 70;
+}
+.topnav-car:hover .topnav-detail {
+    display: block;
+}
+.topnav-car:hover .topnav-link {
+    background: #fff;
+    color: #ff6700;
+}

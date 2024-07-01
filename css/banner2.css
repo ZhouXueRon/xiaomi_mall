@@ -1,0 +1,63 @@
+.banner2 {
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+.banner2-service {
+    width: 234px;
+    height: 170px;
+    margin-right: 14px;
+    background: #5f5750;
+    padding: 3px;
+    font-size: 12px;
+    color: #ccc;
+}
+.banner2-service a {
+    width: 76px;
+    height: 82px;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+}
+.banner2-service a::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 70px;
+    background: #665e57;
+    left: 0;
+    top: 6;
+}
+.banner2-service a:nth-of-type(3n + 1)::before {
+    content: none;
+}
+.banner2-service a::after {
+    position: absolute;
+    content: '';
+    width: 64px;
+    height: 1px;
+    background: #665e57;
+    left: 6px;
+    bottom: 0;
+}
+.banner2-service a:nth-of-type(n + 4)::after {
+    content: none;
+}
+.banner2-service a:hover {
+    color: #fff;
+}
+.banner2-service .iconfont {
+    font-size: 26px;
+    display: block;
+}
+.banner2-item {
+    width: 316px;
+    height: 170px;
+    margin-right: 15px;
+}
+.banner2-item:last-child {
+    margin-right: 0;
+}
+.banner2-item img {
+    width: 100%;
+    height: 100%;
+}
